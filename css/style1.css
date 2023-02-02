@@ -1,0 +1,707 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background: #34495e;
+}
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 100px;
+    line-height: 30px;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    font-size: 0 8px;
+    margin-top: -20px;
+    padding: 10px;
+    line-height: 60px;
+}
+nav a{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+a.active,a:hover:hover{
+    border: 1px solid #fff;
+    border-radius: 0 30px;
+    box-shadow: 0 3px white;
+    padding: 10px;
+    transition: 0.5s;
+}
+nav #icon{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#nav{
+    transition: margin-left .5s;
+    padding: 10px;
+}
+#logo{
+    transition: margin-left .5s;
+    padding: 10px;
+    margin-left: 30px;
+}
+@media (max-width: 1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+@media (max-width: 909px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border: none;
+        color: #3498db;
+    }
+    nav ul.show{
+        left: 0;
+    }
+}
+.main{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/img4.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 20px;
+    margin-top: -10px;
+}
+.main{
+    font-family: montserrat;
+    text-align: center;
+    color: #fff;
+}
+.main h2{
+    padding-top: 200px;
+    font-size: 50px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url('../img/back.png');
+    -webkit-background-clip: text;
+    animation: back 20s linear infinite;
+    font-family: montserrat;
+    /* text-shadow: 5px 5px #1079bf; */
+    /* letter-spacing: 0.4rem; */
+}
+#main{
+    transition: margin-left .5s;
+    padding: 20px;
+}
+@keyframes back{
+    100%{
+        background-position: 200px 0;
+    }
+}
+.main p{
+    font-size: 26px;
+    font-weight: 500;
+    font-family: montserrat;
+    padding: 20px;
+}
+.main button{
+    background-color: #34495e;
+    padding: 10px;
+    border-radius: 10px 0;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 5px 5px #1079bf;
+    font-family: montserrat;
+}
+.main button:hover{
+    background-color: #3498db;
+    transition: 0.5s;
+    color: #000;
+    cursor: pointer;
+}
+
+/* product css */
+.product-details{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #788ca0;    */
+    margin-top: -10px;
+}
+.product-head h1{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: montserrat;
+    /* text-shadow: 2px 2px #be9721; */
+    text-align: center;
+    padding: 20px;
+    text-underline-position: auto;
+    text-decoration-line: underline;
+    text-underline-offset: 15px;
+    text-decoration-color:  #000;
+    text-decoration-thickness: inherit;
+}
+.grid-cards{
+    /* display: inline-block; */
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.grid-cards .card{
+    /* border: 2px solid black; */
+    display: inline-block;
+    margin: 10px;
+    margin-left: 10px;
+    width: 220px;
+    height: 38vh;
+    border-radius: 10px;
+    /* background: #788ca0; */
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+.grid-cards:hover .card{
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+}
+.grid-cards .card1{
+    /* border: 2px solid black; */
+    display: inline-block;
+    background-size: cover;
+    margin: 10px;
+    margin-left: 20px;
+    width: 220px;
+    height: 38vh;
+    border-radius: 10px;
+    background: #788ca0;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(25, 32, 236, 0.958);
+    transition: 0.5s;
+}
+/* product cards */
+.card1 h2{
+    font-size: 30px;
+    font-family: montserrat;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px;
+}
+.card1 button{
+    border-radius: 8px;
+    padding: 0 2px;
+    font-weight: 800;
+    margin-left: 60px;
+    font-size: 14px;
+    background-color: #6a7074;
+}
+.card1 button:hover{
+    background-color: orange;
+    transform: 0.5s;
+}
+.card h2{
+    font-size: 20px;
+    font-family: montserrat;
+    font-weight: bold;
+    text-align: center;
+}
+.card p{
+    font-size: 20px;
+    font-family: montserrat;
+    font-weight: bold;
+    text-align: center;
+}
+.card img{
+    width: 120px;
+    height: 120px;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+/* about-us */
+.about-us{
+    width: 100%;
+    height: 100vh;
+    /* background-color: coral; */
+}
+.about-head{
+    background-color: rgb(74, 138, 241);
+    height: 15vh;
+}
+.about-head h1{
+    font-size: 36px;
+    margin-top: 48%;
+    font-weight: bold;
+    font-family: montserrat;
+    /* text-shadow: 2px 2px #be9721; */
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+}
+.about-us .para h2{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    font-family: montserrat;
+    font-size: 26px;
+}
+.about-us .para h3{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 22px;
+    font-family: montserrat;
+    word-spacing: 10px;
+    padding: 10px;
+    font-weight: 600;
+}
+.about-us .para p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: montserrat;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+}
+.img-container img{
+    padding: 10px;
+    width: 80%;
+    margin-top: 20px;
+}
+.img-container img:hover{ 
+    transform: scale(1.3);
+}
+.icons-head h2{
+    text-align: center;
+    font-family: montserrat;
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 20px;
+}
+.icons{
+    margin-left: 44%;
+    margin-top: 20px;
+}
+.icons i{
+    font-size: 26px;
+    padding: 10px 10px;
+}
+.icons i:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+/* contact-us */
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display:flex;
+    font-family: montserrat;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background: url('../img/new2.jpg');
+    background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+    font-size: 30px;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    padding: 15px;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+    font-size: 20px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 25px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .icon:hover{
+    transform: scale(1.2);
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    font-weight: montserrat;
+    color: #00bcd4;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background:#fff ;
+}
+
+.contactForm h2{
+        font-size: 30px;
+        font-family: montserrat;
+        color: #333;
+        font-weight: 500;
+        padding-bottom: 10px;
+
+}
+/* contactForm */
+.contactForm{
+    width: 35%;
+    padding: 60px;
+    background: #fff;
+    border-radius: 5px;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    font-family: montserrat;
+    font-weight: 700;
+    margin-top: 10px;
+
+}
+.contactForm .inputBox input ,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding:5px 0 ;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding:5px 0 ;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+/* media  */
+@media  (max-width: 1100px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo{
+        width: 100%;
+    }
+}
+.contactForm .inputBox input[type="submit"] {
+
+    background-color: #00bcd4;
+    width: 100px;
+    border: none;
+    font-family: montserrat;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px;
+    background-image: linear-gradient(
+    -60deg, 
+    transparent, transparent 40%, 
+    #ffffff44 40%, #ffffff44 60%,
+    transparent 60%, transparent 100% 
+     ); 
+     background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position-x: 150%;
+}
+    
+.contactForm .inputBox input[type="submit"]:hover {
+    
+    background-position-x: -150%; 
+    transition: background-position-x 700ms;
+}
+
+/* feedback form */
+.feedback{
+    width: 100%;
+    height: fit-content;
+    /* margin-top: -10px; */
+    /* background-color: #f9a0bd; */
+}
+.feedback h1{
+    font-family: montserrat;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.feedback form{
+    /* border: 2px solid black; */
+    border-radius: 30px 0px;
+    background-color: rgb(151, 193, 245);
+    box-shadow: 2px 2px rgb(250, 108, 137);
+    width: 40%;
+    height: 60vh;
+    margin-left: 30%;
+    margin-top: 25px;
+    padding: 10px;
+    font-family: montserrat;
+}
+.feedback form span{
+    font-weight: 400;
+    font-size: 24px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.feedback form input{
+    font-size: 20px;
+    font-weight: 300;
+    forced-color-adjust: grey;
+    border-radius: 10px;
+    padding: 10px 8px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.feedback form textarea{
+    font-size: 20px;
+    font-weight: 300;
+    color: grey;
+    resize: none;
+    border-radius: 10px;
+    margin-left: 178px;
+    padding: 8px;
+}
+/* footer design */
+.footer{
+    font-family: montserrat;
+    background-color: #34495e;
+    width: 100%;
+    /* height: 50vh; */
+    height: auto;
+    margin-top: -10px;
+}
+.foot{
+    margin-left: 40px;
+}
+.foot h2{
+    color: white;
+    font-weight: 400;
+    font-family: montserrat;
+    margin-left: 40px;
+    padding-top: 20px;
+}
+.foot h4{
+    color: rgba(160, 148, 148, 0.957);
+    font-weight: 500;
+    font-family: montserrat;
+    margin-left: 40px;
+}
+.foot img{
+    width: 10%;
+    height: 10%;
+    margin-left: 30px;
+}
+.middle img{
+    width: 13%;
+    height: 13%;
+    margin-left: 42%;
+    margin-top: -22%;
+}
+.middle h1{
+    text-align: center;
+    margin-top: -12%;
+    font-family :  montserrat;
+    font-weight: 800;
+    color: white;
+    margin-left: -40px;
+}
+.middle p{
+    text-align: center;
+    font-family :  montserrat;
+    font-weight: 500;
+    margin-top: 100px;
+    color: rgb(160, 148, 148, 0.957);
+    margin-left: -15px;
+}
+.last{
+    margin-left: 80%;
+    margin-top: -13%;
+}
+.last h2{
+    color: #fff;
+    font-family: montserrat;
+    font-weight: 400;
+}
+.last a{
+    color: rgb(170, 157, 157);
+    font-family: montserrat;
+    font-weight: 300;
+    font-size: 22px;
+    margin-left: 50px;
+}
+
+/* profile sidenav */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .sidenav h1{
+    color: #fff;
+    font-family: montserrat;
+    font-size: 26px;
+    padding: 5px;
+    text-align: center;
+  }
+  .sidenav img{
+    margin-left: 65px;
+    border-radius: 50px;
+    width: 42%;
+    height: 15vh;
+    border: 1px solid white;
+    background-color: coral;
+  }
+  .sidenav a{
+    color: #fff;
+    font-family: montserrat;
+    font-size: 24px;
+    margin-left: 50px;
+    margin-top: 25px;
+  }
